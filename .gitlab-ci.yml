@@ -1,0 +1,16 @@
+stages:
+ - build
+ - deploy
+build_job:
+  stage: build
+  tags:
+    - angular
+  script:
+    - echo "abc"
+    - ls -la
+deploy_job:
+  stage: deploy
+  tags:
+    -  angular
+  script:
+    - echo "tahnh cong"
